@@ -95,12 +95,12 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T01 - Login" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T01 - Login">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 - Enter Username and Password" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 - Enter Username and Password">
             <intProp name="HTTPSampler.concurrentPool">6</intProp>
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -114,8 +114,8 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-&quot;UserEmail&quot;: &quot;${Username}&quot;,&#xd;
-&quot;SubmittedPassword&quot;: &quot;${Password}&quot;,&#xd;
+&quot;UserEmail&quot;: &quot;test1@aptesting.com&quot;,&#xd;
+&quot;SubmittedPassword&quot;: &quot;Perf@1234&quot;,&#xd;
 &quot;ExpirySeconds&quot;: &quot;5000&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
