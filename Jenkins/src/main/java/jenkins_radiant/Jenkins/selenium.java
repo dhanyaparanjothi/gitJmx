@@ -45,7 +45,7 @@ public class selenium {
 		WebElement timeText = driver.findElement(By.id("timetext"));
 		timeText.clear();
 		Thread.sleep(1000);
-		timeText.sendKeys("3");
+		timeText.sendKeys("5");
 		
 
 		WebElement Apply = driver.findElement(By.id("applybutton"));
@@ -54,7 +54,7 @@ public class selenium {
 		WebElement RunTheLog = driver.findElement(By.xpath("//button[@class = 'start o9con o9con-20 o9con-play-square enabled toolbar-button']"));
 		RunTheLog.click();
 		
-		Thread.sleep(3000);
+		Thread.sleep(30000);
 		
 		WebElement DownloadCSV = driver.findElement(By.xpath("//span[text()='Download Full Logs as CSV']"));
 		DownloadCSV.click();
