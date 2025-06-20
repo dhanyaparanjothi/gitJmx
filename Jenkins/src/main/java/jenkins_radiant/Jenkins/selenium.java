@@ -11,18 +11,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class selenium {
 
 	public static void main(String[] args) throws InterruptedException {
-		String downloadFilepath = "C:\\Users\\LENOVO\\.jenkins\\workspace\\log\\logResult";
+		//String downloadFilepath = "C:\\Users\\LENOVO\\.jenkins\\workspace\\log\\logResult";
  
      // Configure Chrome options
-     Map<String, Object> prefs = new HashMap<>();
-     prefs.put("download.default_directory", downloadFilepath);
-     prefs.put("download.prompt_for_download", false);
-     prefs.put("download.directory_upgrade", true);
-     prefs.put("safebrowsing.enabled", true); // Optional but helps prevent Chrome warnings
+    // Map<String, Object> prefs = new HashMap<>();
+     //prefs.put("download.default_directory", downloadFilepath);
+     //prefs.put("download.prompt_for_download", false);
+     //prefs.put("download.directory_upgrade", true);
+     //prefs.put("safebrowsing.enabled", true); // Optional but helps prevent Chrome warnings
  
-     ChromeOptions options = new ChromeOptions();
-     options.setExperimentalOption("prefs", prefs);
-	WebDriver driver = new ChromeDriver(options);
+     //ChromeOptions options = new ChromeOptions();
+    //otions.setExperimentalOption("prefs", prefs);
+	WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://nikepsr.o9solutions.com/");
 		driver.manage().window().maximize();
